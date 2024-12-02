@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652992804486",
+    "project_id": "projectmanagementsystem-bb893",
+    "storage_bucket": "projectmanagementsystem-bb893.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652992804486:android:2d1a7f13c943fb2d064307",
+        "android_client_info": {
+          "package_name": "com.nibm.projectmanagementsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDY9Dr6XF5uxgI05UpOpGtAH6FiUwpMz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/baloo_tamma</item>
+        <item>@font/bruno_ace</item>
+        <item>@font/days_one</item>
+        <item>@font/flow_block</item>
+        <item>@font/hanken_grotesk_medium</item>
+    </array>
+</resources>
