@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.view.WindowManager.LayoutParams.*
 import androidx.appcompat.app.AppCompatActivity
 import com.nibm.projectmanagementsystem.R
+import com.nibm.projectmanagementsystem.ui.Authentication.SignActivity
 import com.nibm.projectmanagementsystem.ui.Authentication.SignIn.SignInActivity
+import com.nibm.projectmanagementsystem.ui.Authentication.SignIn.SignInTabFragment
 
 class SplashScreen : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +20,7 @@ class SplashScreen : Activity() {
         setContentView(R.layout.activity_splash_screen)
         android.os.Handler().postDelayed(
         {
-            val intent = Intent(this@SplashScreen,SignInActivity::class.java)
+            val intent = Intent(this@SplashScreen, SignInActivity::class.java)
             startActivity(intent)
             finish()
         },

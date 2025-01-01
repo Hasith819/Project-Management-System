@@ -2,4 +2,25 @@
 <resources>
 
     <style name="Theme.Projectmanagementsystem" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+
+    <style name="SignActivityTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item> <!-- You may want a darker variant for contrast -->
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item> <!-- Using a specific color for the status bar -->
+
+        <!-- Customize other components like Buttons or ActionBar if necessary -->
+    </style>
+
+
 </resources>
