@@ -1,10 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Home.HomeActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Top Navigation Bar -->
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="67dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Menu Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Menu Icon"
+            android:src="@android:drawable/ic_menu_sort_by_size" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="36dp"
+            android:text="Project Manager"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Button Section -->
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="520dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <!-- Create New Projects -->
+        <Button
+            android:id="@+id/btnCreateProjects"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="CREATE NEW PROJECTS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <!-- View Projects -->
+        <Button
+            android:id="@+id/btnViewProjects"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="VIEW PROJECTS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <!-- Groups -->
+        <Button
+            android:id="@+id/btnGroups"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="GROUPS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <!-- My Projects -->
+        <Button
+            android:id="@+id/btnMyProjects"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="MY PROJECTS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -20,7 +20,7 @@ class SplashScreen : Activity() {
         setContentView(R.layout.activity_splash_screen)
         android.os.Handler().postDelayed(
         {
-            val intent = Intent(this@SplashScreen, SignInActivity::class.java)
+            val intent = Intent(this@SplashScreen, SignActivity::class.java)
             startActivity(intent)
             finish()
         },

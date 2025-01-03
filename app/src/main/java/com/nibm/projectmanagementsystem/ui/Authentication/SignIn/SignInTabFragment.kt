@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.nibm.projectmanagementsystem.databinding.FragmentSignInTabBinding
+import com.nibm.projectmanagementsystem.ui.Authentication.ResetPassword.ResetPasswordActivity
 import com.nibm.projectmanagementsystem.ui.Home.HomeActivity
 
 class SignInTabFragment : Fragment() {
@@ -22,7 +23,9 @@ class SignInTabFragment : Fragment() {
         super.onCreate(savedInstanceState)
         // Initialize Firebase Auth
         auth = Firebase.auth
+
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,6 +45,11 @@ class SignInTabFragment : Fragment() {
             } else {
                 Toast.makeText(activity, "Please enter email and password", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        binding.forgotpassword.setOnClickListener {
+            val intent = Intent(activity, ResetPasswordActivity::class.java)
+            startActivity(intent)
         }
 
         return binding.root

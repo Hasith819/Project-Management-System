@@ -11,6 +11,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.nibm.projectmanagementsystem.R
 import com.nibm.projectmanagementsystem.databinding.ActivitySignInBinding
+import com.nibm.projectmanagementsystem.ui.Authentication.ResetPassword.ResetPasswordActivity
 import com.nibm.projectmanagementsystem.ui.Authentication.SignUp.SignUpActivity
 import com.nibm.projectmanagementsystem.ui.Home.HomeActivity
 
@@ -30,6 +31,11 @@ class SignInActivity : Activity() {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
 
+        }
+
+        binding.forgotpassword.setOnClickListener {
+            val intent = Intent(this, ResetPasswordActivity::class.java)
+            startActivity(intent)
         }
 
         binding.BtnSignIn.setOnClickListener {

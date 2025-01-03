@@ -46,7 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
-            android:drawableLeft="@drawable/baseline_security_24"
+            android:drawableLeft="@drawable/baseline_lock_24"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
